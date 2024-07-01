@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            var numeroinic = prompt ("Digite seu primerio numero: ")
+            var sinal = prompt ("Digite o sinal da sua conta: ")
+            while (sinal != "+" && sinal != "-" && sinal != "/" && sinal != "*"){
+                alert ("Digite seu sinal corretamente")
+                sinal = prompt ("Digite o sinal da sua conta: ")
+            }
+            var numerofin = prompt ("Digite seu segundo numero: ")
+            if (sinal=="+"){
+                var fim=numeroinic+numerofin
+                alert(fim)
+            }else if (sinal=="*"){
+                var fim=numeroinic*numerofin
+                alert(fim)
+            }else if(sinal=="-"){
+                var fim=numeroinic-numerofin
+                alert(fim)
+            }else {
+                var fim=numeroinic/numerofin
+                alert(fim)
+            }
+            alert("O resultado final é: "+resultadofinal)
+        </script>
+    </body>
+</html>
